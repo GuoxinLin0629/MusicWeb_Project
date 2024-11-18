@@ -1,0 +1,5 @@
+venv/
+.cache*
+OpenCage_key.txt
+spotify_keys.json
+__pycache__/
