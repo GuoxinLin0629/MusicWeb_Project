@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request
-from coodinate_spotify import get_playlist
+from coordinate_spotify import get_playlist
 
 # Initialize Flask application
 app = Flask(__name__)
