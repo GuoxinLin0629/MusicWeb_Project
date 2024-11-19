@@ -6,19 +6,34 @@
 	<link rel="stylesheet" type="text/css" href="static/css/style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Moo+Lah+Lah&family=Rubik+Moonrocks&display=swap" rel="stylesheet">
-	<title>Spotify Playlist Generator</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Moo+Lah+Lah&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Moonrocks&family=Shrikhand&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Rubik+Moonrocks&family=Shrikhand&family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-<h1>Map Your Music!</h1>
+<h1>Map Your Music</h1>
+<h2>Create personalized playlists based on your location with this easy-to-use app.<br><br>
+By entering coordinates (latitude and longitude).<br><br>
+The app utilizes the OpenCageAPI to determine your location and the SpotifyAPI to generate a playlist tailored to that area.<br><br>
+
+</h2>
+
 <form method="POST">
     <label>Latitude:</label>
     <input type="text" name=req_lat value={{lat}} required><br><br>
     <label>Longitude:</label>
     <input type="text" name=req_lon value={{lon}} required><br><br>
+<div class="submit">
     <input type="submit" value="Generate Playlist">
+    </div>
 </form>
-<h1></h1>
+
 <iframe  style="border-radius:12px" src="https://open.spotify.com/embed/playlist/{{playlist_id}}?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 </body>
+
 </html>
