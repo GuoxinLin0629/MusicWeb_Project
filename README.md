@@ -2,7 +2,7 @@
 
 This web application allows users to generate Spotify playlists based on geographic coordinates (latitude and longitude). By entering the coordinates, the app uses **OpenCageAPI** to retrieve location data and **SpotifyAPI** to create a playlist tailored to the location. Perfect for experiencing music related to different parts of the world!
 
-
+![interface](gh-assets/CookieLocation.png)
 
 ## Features
 
